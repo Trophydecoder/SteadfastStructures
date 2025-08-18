@@ -1,0 +1,43 @@
+/* Hidden by default (mobile) */
+.GetAQuote {
+    display: none;
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .GetAQuote {
+      font-family: var(--mainfont);
+     background-color: var(--primarycolor);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      height: 10vh;
+      width: 100%;
+    }
+  
+    .QuoteText p {
+      color: var(--paragraphcolor);  
+      font-size: 18px;
+      margin: 0;
+    }
+  
+    .QuoteButton #quoteBtn {
+      border: none;
+      background-color: var(--primarycolor);
+      padding: 15px 35px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 14px;
+      border-radius: 9px;
+      border:  1px solid white;
+      text-decoration: none;
+      color: var(--textprimary);
+    }
+  
+    .QuoteButton #quoteBtn:hover {
+      background: white;
+      color: black;
+    }
+  }
+  

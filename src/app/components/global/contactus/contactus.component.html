@@ -1,0 +1,29 @@
+<section class="contact-section">
+  <div class="containerforforms">
+  <div class="contact-form-card">
+    <h2>Get in Touch</h2>
+    <form (ngSubmit)="sendMessage()">
+      <label for="name">Name</label>
+      <input type="text" id="name" [(ngModel)]="name" name="name" placeholder="Your name" required />
+
+      <label for="message">Message</label>
+      <textarea id="message" [(ngModel)]="message" name="message" placeholder="Write your message..." required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <div class="social-card">
+    <h3>Reach us</h3>
+    <p>via social platforms:</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/groups/3919006241716994" target="_blank" class="social-btn facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://wa.me/27629326569" target="_blank" class="social-btn whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+    </div>
+  </div>
+</div>
+</section>

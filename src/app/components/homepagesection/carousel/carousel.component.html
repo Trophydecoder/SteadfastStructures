@@ -1,0 +1,24 @@
+<div
+  class="MainBackground"
+  [style.backgroundImage]="'url(' + items[currentIndex] + ')'"
+>
+  <div class="Container">
+    <div class="Left">
+      <i class="fa-solid fa-arrow-left" (click)="prevSlide()"></i>
+    </div>
+    <div class="ContainerMiddle">
+      <h1>Building <span>Dreams</span></h1>
+      <h1>One Brick at a Time</h1>
+      <p>
+        We design and construct spaces that stand the test of time. From
+        foundations to finishing touches, every project is crafted with
+        precision, safety, and innovation because at our construction company,
+        your vision is our blueprint.
+      </p>
+      <a href="#contact" input type="button" value="Get in touch" id="btn">Get in touch</a>
+    </div>
+    <div class="Right">
+      <i class="fa-solid fa-arrow-right" (click)="nextSlide()"></i>
+    </div>
+  </div>
+</div>

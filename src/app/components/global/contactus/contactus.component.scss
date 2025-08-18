@@ -1,0 +1,185 @@
+/* 🌌 Page Container */
+.contact-section {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #0f0f0f, #1b1b1b);
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  min-height: 80vh;
+}
+
+.containerforforms{
+  gap: 30px;
+  width: 80%;
+  flex-direction:column;
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+/* 📝 Cards */
+.contact-form-card, 
+.social-card {
+  width: 90%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form-card:hover, 
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.35);
+}
+
+/* 🔹 Headings */
+.contact-form-card h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f5f5f5;
+  text-align: left;
+}
+
+.social-card h3 {
+  font-size: 26px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+/* 📩 Form */
+.contact-form-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form-card label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #ddd;
+}
+
+.contact-form-card input,
+.contact-form-card textarea {
+  padding: 14px;
+  margin-bottom: 18px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.contact-form-card input:focus,
+.contact-form-card textarea:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px var(--main, #d9a300);
+}
+
+.contact-form-card textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+/* 🚀 Button */
+.contact-form-card button {
+  padding: 14px;
+  border: none;
+  background: linear-gradient(135deg, var(--main, #d9a300), #ffbb00);
+  color: var(--textsecondary, #fff);
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form-card button:hover {
+  background: linear-gradient(135deg, #ffcc00, #e6a600);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(255, 200, 0, 0.4);
+}
+
+/* 🌍 Social Section */
+.social-card p {
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #ccc;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.social-btn {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 22px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.social-btn:hover {
+  transform: scale(1.15) rotate(8deg);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+  opacity: 0.95;
+}
+
+/* 🎨 Social Brand Colors */
+.facebook {
+  background: #1877f2;
+}
+
+.whatsapp {
+  background: #25d366;
+}
+
+.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+/* 📱 Responsive */
+@media screen and (min-width: 1024px) {
+
+  .containerforforms{
+    width: 80%;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+  }
+  .contact-section {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 3%;
+    padding: 0px;
+  }
+
+  .contact-form-card,
+  .social-card {
+    width: 40%;
+  
+  }
+ 
+}
